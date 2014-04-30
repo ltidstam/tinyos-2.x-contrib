@@ -10,4 +10,5 @@ CFLAGS += -I$(CC2420DIR) -I$(CC2420DIR)/alarm -I$(CC2420DIR)/control -I$(CC2420D
 CFLAGS += -DTOSH_DATA_LENGTH=34
 CFLAGS += -DENABLE_SPI0_DMA
 CFLAGS += -I../../tos/platforms/telosa
+CFLAGS += -I$(CC2420DIR)/../../lib/dsn
 include $(MAKERULES)
