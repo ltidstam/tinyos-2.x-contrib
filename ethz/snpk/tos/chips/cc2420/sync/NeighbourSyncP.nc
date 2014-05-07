@@ -542,7 +542,7 @@ implementation {
      }
   /***************** NeighbourSyncRequest events ***************/
   default event void NeighbourSyncRequest.updateRequest(am_addr_t address, uint16_t lplPeriod) {
-	  call LowPowerListening.setRxSleepInterval(&resync_msg, lplPeriod);
+	  call LowPowerListening.setRemoteWakeupInterval(&resync_msg, lplPeriod);
 	  call AMSend.send(address, &resync_msg, 0);
   }
   
